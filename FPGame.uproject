@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{E0406E88-4AC4-C4A0-E706-88920D0015C2}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "FPGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
