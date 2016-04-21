@@ -1,0 +1,8 @@
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+*.sln
+*.vcxproj
+*.xcodeproj
