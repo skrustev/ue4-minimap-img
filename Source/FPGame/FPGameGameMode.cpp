@@ -13,5 +13,6 @@ AFPGameGameMode::AFPGameGameMode()
 	DefaultPawnClass = PlayerPawnClassFinder.Class;
 
 	// use our custom HUD class
-	HUDClass = AFPGameHUD::StaticClass();
+	static ConstructorHelpers::FObjectFinder<UBlueprint> HUD(TEXT("/Game/FirstPersonCPP/Blueprints/PlayerHUD"));
+	HUDClass = (UClass*)HUD.Object->GeneratedClass;
 }
