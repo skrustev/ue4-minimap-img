@@ -215,3 +215,10 @@ bool AFPGameCharacter::EnableTouchscreenMovement(class UInputComponent* InputCom
 	}
 	return bResult;
 }
+
+AHUD* AFPGameCharacter::GetHUD() const
+{
+	APlayerController* Controller = Cast<APlayerController>(GetController());
+
+	return Controller->GetHUD();
+}

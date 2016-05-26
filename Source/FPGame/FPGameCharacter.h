@@ -103,5 +103,7 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	UFUNCTION(BlueprintCallable, Category = "HUD")
+	class AHUD* GetHUD() const;
 };
 
